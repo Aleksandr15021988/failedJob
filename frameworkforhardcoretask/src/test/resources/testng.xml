@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CompareCalcelemets" verbose="1" >
+    <test name="CompareValuesBetweenDrpDownAndTable"   >
+        <classes>
+            <class name="test.CompareValuesBetweenDrpDownAndTableTest" />
+        </classes>
+    </test>
+</suite>
