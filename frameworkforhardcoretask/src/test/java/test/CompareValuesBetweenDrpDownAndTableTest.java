@@ -15,7 +15,7 @@ CalculatorPage calculatorPage=new CalculatorPage(driver);
 @BeforeTest
 public void setUp(){
     calculatorPage.openPage().findAndClickCalculatorElements();
-}
+    }
 
 
     @Test
@@ -30,12 +30,10 @@ Assert.assertTrue((calculatorPage.getValueOfMachineClassFromTable()).
 Assert.assertTrue(calculatorPage.getValueOfMachineTypeFromTable().
         contains(calculatorPage.getValueOfMachineTypeFromDropDown()));
     }
-   // @AfterTest
-   // public void webQuit(){
-       // driver.quit();
-
-    //}
-
+    @AfterTest
+    public void webQuit(){
+           driver.quit();
+    }
 
 }
 
