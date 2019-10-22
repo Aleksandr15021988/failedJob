@@ -5,9 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import java.util.ArrayList;
 
 public class Switcher {
-    static ArrayList<String> tabs;
-
-
+   
     public static void openNewWindow() {
         ((JavascriptExecutor) DriverSingletone.getDriver()).executeScript("window.open()");
 
